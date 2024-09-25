@@ -17,9 +17,9 @@ def show_main(request):
     mood_entries = MoodEntry.objects.filter(user=request.user)
 
     context = {
-        'npm' : '2306207663',
+        'npm': '2306207663',
         'name': request.user.username,
-        'class': 'PBP F',
+        'class': 'F',
         'mood_entries': mood_entries,
         'last_login': request.COOKIES['last_login'],
     }
